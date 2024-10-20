@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ITBHS | PPDB 2025</title>
+    <link rel="stylesheet" href="css/cssppdb.css">
+</head>
+<body style="margin: 0;">
+<header>
+    <nav class="navbar">
+        <div class="container">
+          <div class="img3"><img src="pictures/logoril.png" width="90%" ></div>
+            <div class="nav-logo">
+                <a href="#" class="logo"><b>Empowering Minds, Shaping Futures!</b></a>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    
+                    <div class="dropdown" style="float:left;">
+                        <button class="dropbtn"><b>About</b></button>
+                        <div class="dropdown-content" style="left:0;">
+                        <a href="facility.html">Facility</a>
+                        <a href="rules.html">Rules</a>
+                        <a href="extracurricular.html">Extracurricular</a>
+                        </div>
+                      </div>
+                      <div class="dropdown" style="float:left;">
+                        <button class="dropbtn"><b>Blog</b></button>
+                        <div class="dropdown-content" style="left:0;">
+                        <a href="events.html">Events</a>
+                        <a href="upcomingevents.html">Upcoming Events</a>
+                        </div>
+                      </div>
+                    <li><b><a href="ppdb2025.html">PPDB 2025</a></b></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pictures/building2.png" style="width:100%;margin: 0;">
+          <div class="text">Building</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pictures/classroom2.png" style="width:100%;margin: 0;">
+          <div class="text">Classroom</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pictures/labkom2.png" style="width:100%;margin: 0;">
+          <div class="text">Computer Lab</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </div>
+<section>
+    <div class="form">
+
+    <h1 style="font-size: 30px; color: #404040; margin-top: 0;">Registration Form</h1>
+
+    <p >Seize the opportunity to become part of a community that nurtures your ambitions and guides you toward success. ITBHS is currently accepting applications for the upcoming academic year. Whether you aspire to innovate in technology, ITBHS will provide you with the tools to achieve your dreams.</p>
+
+        <form action="/action_page.php">
+          <label for="fname">Student First Name<span class="text-danger"> *</span></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Student Last Name<span class="text-danger"> *</span></label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="gender">Gender<span class="text-danger"> *</span></label>
+          <select id="gender" name="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+
+          <label for="address">Address<span class="text-danger"> *</span></label>
+          <input type="text" id="address" name="address" placeholder="Your address.." >
+
+          <label for="currentschool">Current School<span class="text-danger"> *</span></label>
+          <input type="text" id="currentschool" name="currentschool" placeholder="Your current school..">
+
+          <label for="birthdate">Student Date of Birth<span class="text-danger"> *</span></label>
+          <input type="text" id="sbd" name="sbd" placeholder="Location, DD/MM/YY">
+        
+          <input type="submit" value="Submit">
+        </form>
+        <br>
+        <h4 style="color: black;"><a href="hasilppdb.html" style="color: black;">To see last year acceptance result, click me.</a></h4>
+      </div>
+
+    </div>
+</section>
+
+<footer>
+
+    <div class="card_lokasikontak">
+
+        <div class="lokasi">
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.8350373950323!2d-122.2974895619106!3d37.53927385910394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9f1ce515684b%3A0x7b680e3c3683a6a8!2s970%20Park%20Pl%20%23100%2C%20San%20Mateo%2C%20CA%2094403%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1728349769522!5m2!1sid!2sid" width="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="margin-top: 20px;"></iframe>
+        </div>
+
+        <div class="kontak">
+            <h3>Contact Us</h3>
+            <p>+022 14682</p>
+            <p>970 Park Pl #100, San Mateo, CA 94403, United States</p>
+            <p>Youtube : Institute Technology Bloxy High School</p>
+            <p>Media Social : itbloxy_highschool</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
